@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <span class="nav-logo">She Can <span class="accent">Foundation</span></span>
+    <div class="nav-right">
+      <a href="#about">About</a>
+      <a href="#impact">Impact</a>
+      <a href="#join">Join</a>
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Empowering Girls Since 2015</p>
+      <h1 class="hero-heading">
+        Every girl<br/>
+        <em>deserves</em> a<br/>
+        future she chooses.
+      </h1>
+      <p class="hero-sub">
+        She Can Foundation works with under-resourced communities to give girls the education,
+        mentorship, and confidence to step into any room and lead.
+      </p>
+      <a href="#join" class="btn-primary">Be Part of the Change</a>
+    </div>
+    <div class="hero-image-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1607748851687-ba9a10438621?w=900&q=80"
+        alt="Young women studying together, smiling"
+        class="hero-img"
+        loading="eager"
+      />
+      <div class="image-badge">12,000+ girls impacted</div>
+    </div>
+  </header>
+
+  <!-- ── ABOUT ── -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-heading">We believe potential has no gender.</h2>
+      <div class="about-columns">
+        <p>
+          She Can Foundation was born from a simple truth: millions of girls are kept out of
+          classrooms, boardrooms, and opportunities — not because of ability, but because of
+          circumstance. We exist to change those circumstances.
+        </p>
+        <p>
+          Through our three pillars — <strong>Education Access</strong>,
+          <strong>Skills Training</strong>, and <strong>Community Mentorship</strong> — we
+          partner with local leaders to build programmes that last well beyond our presence.
+          Girls in our network go on to become engineers, doctors, teachers, and entrepreneurs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── IMPACT NUMBERS ── -->
+  <section class="impact" id="impact">
+    <div class="impact-grid">
+      <div class="stat" data-target="12000">
+        <span class="stat-num" id="s1">0</span>
+        <span class="stat-label">Girls Reached</span>
+      </div>
+      <div class="stat" data-target="48">
+        <span class="stat-num" id="s2">0</span>
+        <span class="stat-label">Partner Schools</span>
+      </div>
+      <div class="stat" data-target="94">
+        <span class="stat-num" id="s3">0</span>
+        <span class="stat-label">% Graduation Rate</span>
+      </div>
+      <div class="stat" data-target="11">
+        <span class="stat-num" id="s4">0</span>
+        <span class="stat-label">States Active</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOIN CTA ── -->
+  <section class="join" id="join">
+    <div class="join-inner">
+      <h2>Ready to make a difference?</h2>
+      <p>Volunteer, donate, or spread the word. Every action counts.</p>
+      <div class="join-actions">
+        <button class="btn-primary" onclick="openModal()">Get Involved Today</button>
+        <a href="#about" class="btn-ghost">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">She Can <span class="accent">Foundation</span></span>
+        <p>Unlocking potential. One girl at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#impact">Impact</a>
+        <a href="#join">Join</a>
+        <a href="mailto:hello@shechanfoundation.org">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 She Can Foundation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ── MODAL ── -->
+  <div class="modal-overlay" id="modal" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3>Join She Can Foundation</h3>
+      <p>Choose how you'd like to make an impact:</p>
+      <div class="modal-options">
+        <div class="option-card">🎓 <strong>Mentor a Girl</strong><br/><small>Share your skills weekly</small></div>
+        <div class="option-card">💛 <strong>Donate</strong><br/><small>Fund a scholarship</small></div>
+        <div class="option-card">📣 <strong>Spread the Word</strong><br/><small>Share on social media</small></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
